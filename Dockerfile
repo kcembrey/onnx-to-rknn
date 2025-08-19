@@ -12,8 +12,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN pip install --no-cache-dir \
     numpy==1.26.4 \
     pillow==11.0.0 \
-    onnx==1.14.1 \
-    rknn-toolkit2==2.3.0 \
+    onnx==1.18.0 \
+    rknn-toolkit2==2.3.2 \
     requests
 
 # 3) Workspace
