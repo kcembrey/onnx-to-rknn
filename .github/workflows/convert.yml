@@ -4,16 +4,16 @@ on:
   workflow_dispatch:
     inputs:
       onnx_model_url:
-        description: 'URL of ONNX model to convert'
+        description: 'http://ha.recroomrecords.com/rfdetr-Medium.onnx'
         required: true
       target_resolutions:
-        description: 'Comma-separated list of target resolutions (e.g., 1280x256,1440x384)'
+        description: '320x320'
         required: true
       target_platform:
         type: choice
         required: true
         description: 'Target platform for conversion'
-        default: 'RK3566'
+        default: 'RK3588'
         options:
           - RV1103
           - RV1103b
